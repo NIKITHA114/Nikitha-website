@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Log In</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body style="background-color:#e3e8e8;">
+<U><I><center><h1 style="color:black">Rajagiri College of Social Sciences(Autonomous),Kalamassery</h1></center></I></U>
+<center><img src="Rcss logo.jpeg"width=100 height=100></center>
+<br>
+<br>
+<hr>
+<B><h2><center>Log In</center></h2></B>
+<br>
+<center><h3>Username :</h3></center>
+<center><input type = "text" id="k"></center>
+<center><h4>Password :</h4></center>
+<center><input type = "text" id="i"></center>
+<br>
+<center><button onclick="niki()">Submit</button></center>
+<script>
+function niki(){
+//alert(localStorage.getItem("username"));
+//alert(localStorage.getItem("password"));
+let username = document.getElementById("k").value;
+let password = document.getElementById("i").value;
+let uname = localStorage.getItem("username");
+let pass = localStorage.getItem("password");
+if(username == uname && password==pass)
+{alert("you are valid");
+window.location.href="home page.html";
+}
+else{ alert("intruder");}
+}
+</script>
+</body>
+</html>
+
+
