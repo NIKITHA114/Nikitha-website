@@ -51,6 +51,11 @@
 <script>
 function myFunction() {
 alert("Confirm Submission");
+  window.location.href="login.html";
+let username=document.getElementById("n");
+localStorage.setItem("username", username.value);
+let password=document.getElementById("m");
+localStorage.setItem("password", password.value);
 }
 </script>
 </body>
